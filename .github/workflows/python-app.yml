@@ -38,6 +38,6 @@ jobs:
     - name: Test with pytest
       run: |
         coverage run -m pytest
-        coverage report -m
+        coverage lcov -o ./coverage/lcov.info
     - name: Code Coverage Report
       uses: romeovs/lcov-reporter-action@v0.2.11
